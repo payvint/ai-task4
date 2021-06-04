@@ -122,7 +122,7 @@ def select_cosmetics_after_type(message):
         bot.send_message(message.chat.id,'Вы выбрали ' + str(target_age) + ' ' + str(target_price) + ' ' + str(target_brand) + ' ' + str(target_type))
         selected_cosmetics = select_cosmetic()
         if len(selected_cosmetics) > 0:
-            bot.send_message(message.chat.id, 'Baш выбор ' + str(selected_cosmetics[randint(0, len(selected_cosmetics) - 1]))
+            bot.send_message(message.chat.id, 'Baш выбор ' + str(selected_cosmetics[randint(0, len(selected_cosmetics) - 1])))
         else:
             bot.send_message(message.chat.id, 'Ничего не найдено по вашему запросу - попробуйте еще раз')
     elif message.text == 'Cancel':
